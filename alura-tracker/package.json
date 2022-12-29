@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "json-server --watch db.json && vue-cli-service serve",
-    "build": "json-server --watch db.json && vue-cli-service build",
-    "lint": "json-server --watch db.json && vue-cli-service lint"
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && json-server --watch db.json && vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && json-server --watch db.json && vue-cli-service build",
+    "lint": "export NODE_OPTIONS=--openssl-legacy-provider && json-server --watch db.json && vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^1.2.1",
