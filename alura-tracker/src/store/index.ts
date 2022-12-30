@@ -54,7 +54,7 @@ export const store = createStore<Estado>({
                 url += '?descricao=' + filtro;
             }
 
-            console.log("Base URL request -> ", http.defaults.baseURL);
+            console.log("Base URL request -> url: ", http.defaults.baseURL);
 
             http.get(url)
                 .then(resposta => {
