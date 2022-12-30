@@ -1,12 +1,20 @@
 {
   "projetos": [
     {
-      "nome": "Teste",
+      "nome": "Alura Tracker",
       "id": 1
     },
     {
       "id": 2,
-      "nome": "Teste255"
+      "nome": "Alura Bytebank"
+    },
+    {
+      "id": 3,
+      "nome": "Curso VueJS"
+    },
+    {
+      "id": 4,
+      "nome": "Curso NuxtJS"
     }
   ],
   "tarefas": [
@@ -20,31 +28,31 @@
       }
     },
     {
-      "duracaoEmSegundos": 2,
-      "descricao": "Teste",
-      "projeto": {
-        "id": 1,
-        "nome": "Alura Tracker"
-      },
-      "id": 2
-    },
-    {
-      "duracaoEmSegundos": 4,
-      "descricao": "Teste",
-      "projeto": {
-        "nome": "Teste",
-        "id": 2
-      },
-      "id": 3
-    },
-    {
-      "duracaoEmSegundos": 2,
-      "descricao": "Teste55",
+      "id": 2,
+      "duracaoEmSegundos": 80,
+      "descricao": "Edição de textos",
       "projeto": {
         "id": 2,
-        "nome": "Teste255"
-      },
-      "id": 4
+        "nome": "Alura Bytebank"
+      }
+    },
+    {
+      "id": 3,
+      "duracaoEmSegundos": 500,
+      "descricao": "Finalização do projeto",
+      "projeto": {
+        "id": 3,
+        "nome": "Curso VueJS"
+      }
+    },
+    {
+      "id": 4,
+      "duracaoEmSegundos": 600,
+      "descricao": "Instalando as dependências do projeto",
+      "projeto": {
+        "id": 4,
+        "nome": "Curso NuxtJS"
+      }
     }
   ]
 }
