@@ -94,18 +94,18 @@ export default defineComponent({
         const { notificar } = useNotificador();
         const filtro = ref("");
 
-        // const tarefas = computed(() =>
-        //     store.state.tarefas.filter(
-        //         (tarefa) => !filtro.value || tarefa.descricao.toLowerCase().includes(filtro.value.toLocaleLowerCase())
-        //     )
-        // );
+        const tarefas = computed(() =>
+            store.state.tarefas.filter(
+                (tarefa) => !filtro.value || tarefa.descricao.toLowerCase().includes(filtro.value.toLocaleLowerCase())
+            )
+        );
 
-        watchEffect(() => {
-            store.dispatch(OBTER_TAREFAS, filtro.value);
-        });
+        // watchEffect(() => {
+        //     store.dispatch(OBTER_TAREFAS, filtro.value);
+        // });
 
         return {
-            tarefas: computed(() => store.state.tarefas),
+            tarefas,
             store,
             notificar,
             filtro
