@@ -54,6 +54,8 @@ export const store = createStore<Estado>({
                 url += '?descricao=' + filtro;
             }
 
+            console.log("Base URL request -> ", http.defaults.baseURL);
+
             http.get(url)
                 .then(resposta => {
                     commit(DEFINIR_TAREFAS, resposta.data);
